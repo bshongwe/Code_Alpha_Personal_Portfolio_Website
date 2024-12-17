@@ -16,18 +16,20 @@ const toggleNavLinkAnimation = () => {
 
 // Burger menu click event listener
 selectElement(".burger-menu-icon").addEventListener("click", () => {
-    selectElement(".nav-list").classList.toggle("active");
-    selectElement(".burger-menu-icon").classList.toggle("toggle");
+    const navList = selectElement(".nav-list");
+    navList.classList.toggle("active");  // Toggle the 'active' class for the navigation list
+    selectElement(".burger-menu-icon").classList.toggle("toggle"); // Toggle the 'toggle' class for the burger icon
 
-    toggleNavLinkAnimation();
+    toggleNavLinkAnimation();  // Call the function to animate the nav links
 });
 
 // Nav link click event listener
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
-        selectElement(".nav-list").classList.toggle("active");
-        selectElement(".burger-menu-icon").classList.toggle("toggle");
+        const navList = selectElement(".nav-list");
+        navList.classList.toggle("active");  // Toggle the 'active' class for the navigation list
+        selectElement(".burger-menu-icon").classList.toggle("toggle");  // Toggle the 'toggle' class for the burger icon
 
-        toggleNavLinkAnimation();
+        toggleNavLinkAnimation();  // Call the function to animate the nav links
     });
 });
