@@ -2,26 +2,32 @@
 const burgerMenu = document.querySelector('.burger-menu-icon');
 const navList = document.querySelector('.nav-list');
 
-burgerMenu.addEventListener('click', () => {
-  navList.classList.toggle('active');
-  burgerMenu.classList.toggle('toggle');
-});
+if (burgerMenu && navList) {
+  burgerMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+    burgerMenu.classList.toggle('toggle');
+  });
+}
 
 // Scroll to sections on click
 const navLinks = document.querySelectorAll('.nav-link');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
+if (navLinks.length) {
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
 
-    window.scrollTo({
-      top: targetSection.offsetTop - 50, // offset for fixed header
-      behavior: 'smooth'
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 50, // offset for fixed header
+          behavior: 'smooth'
+        });
+      }
     });
   });
-});
+}
 
 // Scroll Down Button (Landing Page)
 const scrollDownBtn = document.querySelector('.scroll-down');
@@ -30,25 +36,35 @@ if (scrollDownBtn) {
   scrollDownBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const targetSection = document.getElementById('about');
-    window.scrollTo({
-      top: targetSection.offsetTop - 50, // offset for fixed header
-      behavior: 'smooth'
-    });
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 50, // offset for fixed header
+        behavior: 'smooth'
+      });
+    }
   });
 }
 
 // Project Section - Toggle Visibility on Hover
 const projectItems = document.querySelectorAll('.project-item');
 
-projectItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    item.querySelector('.project-description').classList.add('active');
-  });
+if (projectItems.length) {
+  projectItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const description = item.querySelector('.project-description');
+      if (description) {
+        description.classList.add('active');
+      }
+    });
 
-  item.addEventListener('mouseleave', () => {
-    item.querySelector('.project-description').classList.remove('active');
+    item.addEventListener('mouseleave', () => {
+      const description = item.querySelector('.project-description');
+      if (description) {
+        description.classList.remove('active');
+      }
+    });
   });
-});
+}
 
 // Scroll Animations for Sections (Simple Fade-In Effect)
 const sections = document.querySelectorAll('section');
@@ -71,8 +87,20 @@ function checkVisibility() {
   });
 }
 
-// Initialize Scroll Event
-window.addEventListener('scroll', checkVisibility);
+// Initialize Scroll Event (with requestAnimationFrame for better performance)
+let isScrolling = false;
+
+function onScroll() {
+  if (!isScrolling) {
+    window.requestAnimationFrame(() => {
+      checkVisibility();
+      isScrolling = false;
+    });
+    isScrolling = true;
+  }
+}
+
+window.addEventListener('scroll', onScroll);
 window.addEventListener('load', checkVisibility);
 
 // Highlight Nav Items when Scrolling
