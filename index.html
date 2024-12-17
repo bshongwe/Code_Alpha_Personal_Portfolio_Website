@@ -1,323 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-	<!-- ************ Head ************ -->
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ernest B. Shongwe is a software engineer specializing in JavaScript, Python, and React. Explore services, projects, and contact for collaboration.">
+  <meta name="keywords" content="Ernest Shongwe, Software Engineer, JavaScript, Python, React, ALX Africa, Projects, Services">
+  <meta name="author" content="Ernest B. Shongwe">
+  <title>Ernest B. Shongwe | ALX Software Engineering Student</title>
+  
+  <!-- Styling -->
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  
+  <script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <title>Ernest B. Shongwe | ALX Software Engineering Student</title>
-
-    <!-- *** Page Setup *** -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--- Styling --->
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
-    <script
-      src="https://kit.fontawesome.com/836a943e18.js"
-      crossorigin="anonymous">
-    </script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-
-  </head>
-  <!-- ************ end of Head ************ -->
-
-  <body>
-
+<body>
   <!-- ************ HEADER ************ -->
-    <header>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Ernest B. Shongwe" />
+          </a>
+        </div>
 
+        <!-- Burger Menu Icon -->
+        <div class="burger-menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <!-- Avatar & Nav Menu Items -->
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#landing-page">
+              <img src="images/profile-pic.jpg" alt="Ernest B. Shongwe" class="profile-pic nav-link" />
+              <span class="caption nav-link">Ernest B. Shongwe</span>
+            </a>
+          </li>
+
+          <!-- Nav Menu -->
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+          <!-- Social Media Icons -->
+          <li class="nav-item">
+            <a href="#" target="_blank" class="nav-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" class="nav-link" aria-label="Dev.to"><i class="fab fa-dev"></i></a>
+            <a href="#" target="_blank" class="nav-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </li>
+
+          <!-- Call-to-action Button -->
+          <div class="cta">
+            <a href="#" target="_blank" class="btn nav-link">Buy Me Coffee</a>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ************ MAIN ************ -->
+  <main>
+    <!-- Intro -->
+    <section id="landing-page" class="landing-page">
       <div class="container">
-
-	      <!-- ************ Nav Container ************ -->
-        <nav>
-
-          <div class="nav-brand">
-            <a href="index.html">
-              <img src="images/logo.png" alt="Ernest" />
+        <div class="main-message">
+          <h2>Ernest B. Shongwe</h2>
+          <h3>{Software Engineer}</h3>
+          <p>JavaScript . Python . Ruby . React . MySQL</p>
+          <div class="intro-btn">
+            <div class="cta">
+              <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+            <div class="cta">
+              <a href="#projects" class="btn">My Projects</a>
+            </div>
+          </div>
+          <div>
+            <a href="#about" class="scroll-down">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
 
-	  <!-- Top Right Corner Menu -->
-          <div class="burger-menu-icon">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-img">
+          <img src="images/profile-pic.jpg" alt="Ernest B. Shongwe" class="about-pic" />
+        </div>
+        <div class="about-text-box">
+          <h2>Hello 👋🏽</h2>
+          <p>
+            I am a Code Alpha Intern studying at ALX Holberton. I also attend freeCodeCamp, AWS Educate & Microsoft Learn.
+            I have a strong passion for building apps with graphical front ends supported by advanced back-end features.
+          </p>
+          <p>
+            My journey started at freeCodeCamp with JavaScript, progressed to C/C++ at ALX Holberton, and evolved with
+            Python, Ruby, MySQL, and Puppet.
+          </p>
+          <p>
+            I work with various IDEs and tools such as VS Code, IntelliJ, React.js, Angular, among others.
+          </p>
+        </div>
+      </div>
+      <hr />
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="title-heading">
+          <h2>SKILLS & SERVICES</h2>
+          <p>Using the best front-end design tools in the market, your website will leave a lasting impression on your clientele.</p>
+        </div>
+        <div class="service-tiers">
+          <div class="tier-item">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h2>Software Application Development</h2>
+            <p>I build Node.js, Flask, Django, and mobile apps (Swift, Flutter).</p>
           </div>
-	  <!-- end of Top Right Corner Menu -->
+          <div class="tier-item">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <h2>Responsive Web Design</h2>
+            <p>I create the best responsive designs in the market.</p>
+          </div>
+          <div class="tier-item">
+            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+            <h2>Other Services</h2>
+            <p>Other tech services may be solicited upon enquiry.</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
 
-	  <!-- Avatar -->
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#landing-page">
-
-                <img
-                  src="images/profile-pic.jpg"
-                  alt="Ernest B. Shongwe"
-                  class="profile-pic nav-link"
-                />
-
-                <span class="caption nav-link">Ernest B. Shongwe</span>
-              </a>
-            </li>
-	    <!-- end of Avatar -->
-
-	    <!-- Nav Menu Items -->
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-
-	    <!-- Social Media Icon Links -->
-            <li class="nav-item">
-              <a href="#" target="_blank" class="nav-link">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a href="#" target="_blank" class="nav-link">
-                <i class="fab fa-dev"></i>
-              </a>
-              <a href="#" target="_blank" class="nav-link">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <div class="cta">
-              <a href="#" target="_blank" class="btn nav-link">Buy Me Coffee</a>
-            </div>
-          </ul>
-
-        </nav>
-	<!-- ************ end of Nav Menu Container ************ -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="title-heading">
+        <h2>PROJECTS</h2>
+        <p>My latest projects</p>
       </div>
 
-    </header>
-    <!-- ************ end of HEADER ************ -->
-
-    <!-- ************ MAIN ************ -->
-    <main>
-
-	    <!-- Intro -->
-      <section id="landing-page" class="landing-page">
-        <div class="container">
-          <div class="main-message">
-		<h2>Ernest B. Shongwe</h2>
-            <h3>{Software Engineer}</h3>
-            <p>JavaScript . Python . Ruby . React . MySQL</p>
-            <div class="intro-btn">
-              <div class="cta">
-                <a href="#contact" class="btn">Get In Touch</a>
-              </div>
-              <div class="cta">
-                <a href="#projects" class="btn">My Projects</a>
-              </div>
-            </div>
-            <div>
-              <a href="#about" class="scroll-down">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+      <!-- Forex-Crypto App Project -->
+      <div class="project-item">
+        <div class="project-img has-margin-right">
+          <img src="images/forex-crypto-app.PNG" alt="Forex-Crypto App" />
         </div>
-      </section>
-      <section id="about" class="about">
-        <div class="container">
-          <div class="about-img">
-            <img
-              src="images/profile-pic.jpg"
-              alt="Ernest B. Shongwe"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-text-box">
-            <h2>Hello 👋🏽</h2>
-            <p>
-              I am a Code Alpha Intern studying at ALX Holberton. I also
-	      attend freeCodeCamp, AWS educate & Microsoft Learn. I have a
-	      strong passion for building apps with graphical front end,
-	      supported by considerate to advanced back end features.
-            </p>
-            <p>
-              I started my coding journey at freeCodeCamp using JavaScript,
-	      proceeded to ALX Holberton, where I was introduced to C/C++,
-	      advanced to higher language programming using Python, Ruby, MySQL
-	      and Puppet amongs others.
-            </p>
-            <p>
-              I use various IDEs and tools such as VS Code, IntelliJ, React.js,
-	      Angular amongst others.
-            </p>
-          </div>
+        <div class="project-description">
+          <h2>Forex-Crypto App</h2>
+          <p>
+            The app analyzes the Forex/crypto markets and manages trades using the trading bot feature. It uses LumiBot
+            for market analysis, assisted by the TradeView API. The Lumibot module and API run on Python scripts.
+          </p>
+          <a href="#" class="project-link" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"> View Code</i>
+          </a>
         </div>
-        <hr />
+      </div>
 
-	<!-- Services -->
-      </section>
-      <section id="services" class="services">
-        <div class="container">
-          <div class="title-heading">
-            <h2>SKILLS & SERVICES</h2>
-            <p>
-              Using the best front end design tools in the market, your
-	      website will having a lasting impression on your clientele
-            </p>
-          </div>
-          <div class="service-tiers">
-            <div class="tier-item">
-              <i class="fa fa-code" aria-hidden="true"></i>
-              <h2>Software Application Development</h2>
-              <p>
-                I build Node.js apps, Flask apps, Django apps, and even
-		mobile apps (Swift and Flutter)
-              </p>
-            </div>
-            <div class="tier-item">
-              <i class="fa fa-mobile" aria-hidden="true"></i>
-              <h2>Responsive Web Design</h2>
-              <p>
-                I create the best responsive designs in the market
-              </p>
-            </div>
-            <div class="tier-item">
-              <i class="fa fa-file-code-o" aria-hidden="true"></i>
-              <h2>Other Services</h2>
-              <p>
-                Other tech services may be solicited upon enquiry
-              </p>
-            </div>
-          </div>
+      <!-- To-do App Project -->
+      <div class="project-item">
+        <div class="project-description has-margin-right">
+          <h2>To-do App</h2>
+          <p>
+            A simple to-do app I developed for educational purposes. Users can add and remove tasks, which are stored
+            in a database. It uses React, Redux, and Firebase for authentication.
+          </p>
+          <a href="#" class="project-link" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"> View Code</i>
+          </a>
         </div>
-        <hr />
-      </section>
+        <div class="project-img">
+          <img src="images/to-do.png" alt="To-do App" />
+        </div>
+      </div>
 
-      <!-- Projects -->
-      <section id="projects" class="projects">
-        <div class="title-heading">
-          <h2>PROJECTS</h2>
-          <p>My latest projects</p>
+      <!-- Calculator Project -->
+      <div class="project-item">
+        <div class="project-img has-margin-right">
+          <img src="images/calculator.png" alt="Calculator App" />
         </div>
-        <div class="project-item">
-          <div class="project-img has-margin-right">
-            <img src="images/forex-crypto-app.PNG" />
-          </div>
-          <div class="project-description">
-            <h2>Forex-Crypto App</h2>
-            <p>
-              The app generally analyses the Forex/ crypto markets and, using
-	      the trading bot feature, manages trades at command. The app
-	      uses LumiBot features for market analysis, assisted by the
-	      TradeView API. The Lumibot module and API runs on python scripts
-            </p>
-	    <a href="#" class="project-link" target="_blank">
-		    <i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-          </div>
+        <div class="project-description">
+          <h2>Calculator</h2>
+          <p>
+            A simple calculator for basic arithmetic operations. Designed with CSS grid, and powered by JavaScript for
+            computation and result display.
+          </p>
+          <a href="#" class="project-link" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"> View Code</i>
+          </a>
         </div>
+      </div>
+      <hr />
+    </section>
 
-        <div class="project-item">
-          <div class="project-description has-margin-right">
-            <h2>To-do App</h2>
-            <p>
-              This is a simple to-do app I developed for educational purposes.
-              It allows the user to perform CRUD operations e.g adding and
-	      removing tasks from the database. Users must register and login
-	      for them to use the app. A user can only see the tasks that
-	      he/she have added. I developed this app using React, Redux
-	      and Firebase.
-            </p>
-	    <a href="#" class="project-link" target="_blank">
-		    <i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-          </div>
-          <div class="project-img">
-            <img src="images/to-do.png" />
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-img has-margin-right">
-            <img src="images/calculator.png" />
-          </div>
-          <div class="project-description">
-            <h2>Calculator</h2>
-            <p>
-              This is a simple calculator which performs the most common
-              arithmetic operations. It has a cool design and buttons are
-              arranged nicely using a CSS grid. I used JavaScript to receive
-              input, perform computation and display the correct result on
-              the "screen".
-            </p>
-            <a href="#" class="project-link" target="_blank"
-              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
-            >
-          </div>
-        </div>
-        <hr />
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <p>
+        Reaching out is appreciated. All texts & emails are welcome. Drop me a line and I’ll get back to you ASAP!
+      </p>
+      <p><i>For hiring and revenue-generating opportunities, use <strong>"RE: <Subject>"</strong></i></p>
+      <div class="container">
         <p>
-          Reaching out is appreciated. All texts & emails are welcome.
-          Drop me a line and I’ll get back to you ASAP!
+          <a href="mailto:shongwe.bhekizwe@yahoo.com">
+            <i class="fas fa-envelope-open"></i> shongwe.bhekizwe@yahoo.com
+          </a>
         </p>
         <p>
-          <i
-            >For hiring and revenue generating opportunities, use
-	    <strong>"RE: <Subject>"</strong></i
-          >
+          <a href="#" target="_blank"><i class="fab fa-youtube"> YouTube</i></a>
         </p>
-        <div class="container">
-          <p>
-            <a href="mailto:shongwe.bhekizwe@yahoo.com"
-              ><i class="fas fa-envelope-open"></i> shongwe.bhekizwe@yahoo.com</a
-            >
-          </p>
-          <p>
-            <a href="#" target="_blank"
-              ><i class="fab fa-youtube"> YouTube</i></a
-            >
-          </p>
-          <p>
-            <a href="#" target="_blank"><i class="fab fa-dev"> Dev</i></a>
-          </p>
-          <p>
-            <a href="#" target="_blank"
-              ><i class="fab fa-twitter"> Twitter</i></a
-            >
-          </p>
-        </div>
-        <hr />
-      </section>
-      <footer>
-        <div class="footer-nav">
-          <a href="#landing-page" class="footer-nav-link">Home</a>
-          <a href="#about" class="footer-nav-link">About</a>
-          <a href="#services" class="footer-nav-link">Services</a>
-          <a href="projects" class="footer-nav-link">Projects</a>
-          <a href="#contact" class="footer-nav-link">Contact</a>
-        </div>
-        <div class="footer-coded-by">
-          <p>
-            <i class="fas fa-code"></i> with 💙 by Ernest Bhekizwe Shongwe &copy; 2024
-          </p>
-          <p>Built using HTML, CSS & JavaScript</p>
-        </div>
-        <div class="footer-social">
-          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-dev"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-      </footer>
-    </main>
-    <script src="main.js"></script>
-  </body>
+        <p>
+          <a href="#" target="_blank"><i class="fab fa-dev"> Dev</i></a>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fab fa-twitter"> Twitter</i></a>
+        </p>
+      </div>
+      <hr />
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-nav">
+        <a href="#landing-page" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
